@@ -2,10 +2,11 @@ import './App.css';
 import About from './components/About/index';
 import Nav from './components/Nav/index'; 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Homepage from './components/Homepage/index'; 
+// import Homepage from './components/Homepage/index'; 
 //import Test from './components/Test page/index'; 
 import Contact from './components/Contact/index'; 
-import Gallery from './components/Gallery/index'; 
+import Portfolio from './components/Portfolio/index'; 
+import Resume from './components/Resume/index'; 
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
     <Switch>
       <Route exact path='/about' component={ About }/> 
       <Route exact path='/contact' component={ Contact}/>
-      <Route exact path='/gallery' component={Gallery}/>
-      <Route component={ Homepage }/>
+      <Route exact path='/portfolio' component={Portfolio}/>
+      <Route exact path='/resume' component={Resume}/>
+      {/* <Route component={ Homepage }/> */}
     </Switch>
 </main>
 </Router>
