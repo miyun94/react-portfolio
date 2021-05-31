@@ -289,3 +289,10 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+.backgroundImage{
+  height: 50vh;
+  left: 1%;
+  right: 1%;
+  background-size: cover;
+}

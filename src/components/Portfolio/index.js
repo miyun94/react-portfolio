@@ -1,5 +1,13 @@
 import React, {useState} from 'react'; 
 // import ProjectList from '../ProjectList/index'; 
+import githubIcon from '../../assets/icons/github.png'; 
+import imageZero from '../../assets/screenshots/0.png'; 
+import imageOne from '../../assets/screenshots/1.png'; 
+import imageTwo from '../../assets/screenshots/2.png'; 
+import imageThree from '../../assets/screenshots/3.png'; 
+import imageFour from '../../assets/screenshots/4.png'; 
+import imageFive from '../../assets/screenshots/5.png'; 
+import imageSix from '../../assets/screenshots/6.png'
 
 function Portfolio(){
     const [project] = useState([
@@ -7,53 +15,60 @@ function Portfolio(){
           name: 'Work Day Scheduler',
           deployedLink: 'https://miyun94.github.io/scheduler/',
           github: 'https://github.com/miyun94/scheduler',
-          imageId: 0
+          imageLink: imageZero
       },
       {
           name: 'Budget Tracker',
           deployedLink: 'https://budgettracker042521.herokuapp.com/',
           github: 'https://github.com/miyun94/budget-tracker',
-          imageId: 1
+          imageLink: imageOne
       },
       {
           name: 'Book Search',
           deployedLink: 'https://salty-spire-75874.herokuapp.com/',
           github: 'https://github.com/miyun94/book-search-engine',
-          imageId: 2
+          imageLink: imageTwo
       },    
       {
           name: 'Note Taker',
           deployedLink: 'https://github.com/miyun94/note-taker',
           github: 'https://github.com/miyun94/note-taker',
-          imageId: 3
+          imageLink: imageThree
       }, 
       {
           name: 'Event Planner',
           deployedLink: 'https://jcc83267.github.io/Event-Planner/',
           github: 'https://github.com/jcc83267/Event-Planner',
-          imageId: 4
+          imageLink: imageFour
       },    
       {
           name: 'Flowers Dating App',
           deployedLink: ' https://send-flowers.herokuapp.com',
           github: 'https://github.com/matt-gross-27/flowers',
-          imageId: 5
+          imageLink: imageFive
       },    
-      ]);
+      {
+        name: 'Memonto',
+        deployedLink: 'https://rocky-shelf-98146.herokuapp.com/',
+        github: 'https://github.com/davevebber/memonto',
+        imageLink: imageSix
+    },   
+    ]);
 
       const projectList = project.map((project, i) =>
       <div>
           <br/>
-          <span><h3>{project.name}</h3>
-             
+          <span>
+                <div className="backgroundImage" style = {{ backgroundImage: `url(${project.imageLink})` }}>
                   <a href={`${project.deployedLink}`} target="_blank" rel="noreferrer">
-                      Deployed link
+                      {project.name}
                   </a>
-                  <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      github link
-                  </a></span>
-                                             
-          <div className={`project${i} divBG`}></div>
+                  <br></br>
+                  <a href={project.github} target="_blank" rel="noreferrer">
+                      <img src={githubIcon} style={{width: "5%"}}></img>
+                  </a>
+                  </div>
+                  </span>                          
           <br/>
       </div>
   )
