@@ -6,7 +6,7 @@ function Resume(){
         <section id="resume">
         <h1>RESUME</h1>
         <h2>Links</h2>
-        <a href='' target="_blank" rel="noreferrer">
+        <a href='https://docs.google.com/document/d/17cqdUGRJgH6Zhmm9M5O9rIyjbHHOb0nOu_N_2RlB9r4/edit?usp=sharing' target="_blank" rel="noreferrer">
             Resume Link
         </a>
         <h2>Front-end Proficiencies</h2>
