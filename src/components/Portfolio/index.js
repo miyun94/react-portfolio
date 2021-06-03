@@ -59,14 +59,18 @@ function Portfolio(){
       <div>
           <br/>
           <span>
-                <div className="backgroundImage" style = {{ backgroundImage: `url(${project.imageLink})` }}>
-                  <a href={`${project.deployedLink}`} target="_blank" rel="noreferrer">
+          <a href={project.github} target="_blank" rel="noreferrer">
+                      <img src={githubIcon} style={{width: "3%"}}></img>
+            </a>
+                     <a href={`${project.deployedLink}`} target="_blank" rel="noreferrer">
                       {project.name}
                   </a>
+                <div className="backgroundImage" style = {{ backgroundImage: `url(${project.imageLink})` }}
+                onClick={()=>window.open(`${project.deployedLink}`, "_blank")}>
+                  {/* <a href={`${project.deployedLink}`} target="_blank" rel="noreferrer"> */}
+                      {/* {project.name} */}
+                  {/* </a> */}
                   <br></br>
-                  <a href={project.github} target="_blank" rel="noreferrer">
-                      <img src={githubIcon} style={{width: "5%"}}></img>
-                  </a>
                   </div>
                   </span>                          
           <br/>
