@@ -15,7 +15,8 @@ function App() {
 <Nav/>
 <main>
     <Switch>
-      <Route component = {About}/>
+      {/* <Route component = {About}/> */}
+      <Route exact path="/"><Redirect to "/about"/> </Route>
       <Route exact path='/about' component={ About }/>
       <Route exact path='/contact' component={ Contact}/>
       <Route exact path='/portfolio' component={Portfolio}/>
