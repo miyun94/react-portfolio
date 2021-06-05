@@ -8,16 +8,16 @@ function Nav() {
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/react-portfolio/about">About</NavLink>
                     </li>
                     <li className="mx-2">
-                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to="/react-portfolio/portfolio">Portfolio</NavLink>
                     </li>
                     <li className="mx-2">
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/react-portfolio/contact">Contact</NavLink>
                     </li>
                       <li className="mx-2">
-                    <NavLink to="/resume">Resume</NavLink>
+                    <NavLink to="/react-portfolio/resume">Resume</NavLink>
                     </li>
                 </ul>
             </nav>
