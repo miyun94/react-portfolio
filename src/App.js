@@ -15,16 +15,12 @@ function App() {
 <Nav/>
 <main>
     <Switch>
-      {/* <Route component = {About}/> */}
-      <Route exact path="/react-portfolio"><Redirect to="/about"/><About/></Route>
-      {/* <Route exact path='/about' component={ About }><Redirect to="/about"/></Route>
-      <Route exact path='/contact' component={ Contact}/>
-      <Route exact path='/portfolio' component={Portfolio}/>
-      <Route exact path='/resume' component={Resume}/> */}
-      <Route exact path="/about"><Redirect to="/about"/><About/></Route>
-      <Route exact path="/contact"><Redirect to="/contact"/><Contact/></Route>
-      <Route exact path="/portfolio"><Redirect to="/portfolio"/><Portfolio/></Route>
-      <Route exact path="/resume"><Redirect to="/resume"/><Resume/></Route>
+      <Route exact path='/react-portfolio/' component = {About}/>
+      {/* <Route exact path="/"><Redirect to="/about"/><About/></Route> */}
+      <Route exact path='/react-portfolio/about' component={ About }/>
+      <Route exact path='/react-portfolio/contact' component={ Contact}/>
+      <Route exact path='/react-portfolio/portfolio' component={Portfolio}/>
+      <Route exact path='/react-portfolio/resume' component={Resume}/>
     </Switch>
 </main>
 </Router>
